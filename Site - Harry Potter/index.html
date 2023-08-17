@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Harry Potter</title>
+        <link rel="stylesheet" href="Assets/Css/Style.css">
+        <link rel="text/javascript" href="Assets/Java/Javascript.js">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    </head>
+
+    <body>
+    <nav> 
+        <div class="container clearfix">
+            <ul id="menu">
+                <li><img class="img1" src="Assets/Img/HP título.png" alt="Harry Potter" id="titulo"></li>
+                <li>
+                    <a href="index.html"><img src="Assets/Img/Inicio.png" alt="Inicio"><br>
+                        <span>Início</span></a>
+                </li>
+                <li><a href=""><img src="Assets/Img/Explorar.png" alt="Explorar"><br>
+                    <span>Explorar</span></a>
+                </li>
+                <li><a href=""><img src="Assets/Img/Chapéu seletor.png" alt="Loja"><br>
+                    <span>Loja</span></a>
+                </li>
+            </ul>
+                <p id="frase">"Draco dormiens nunquam titillandus"</p>
+        </div>
+    </nav>
+        <div id="main" class="intro">
+            <div class="banner">
+                <div class="container clearfix">
+                    <section id="bem_vindo">
+                        <div class="col-12">
+                            <h1>Bem-vindo ao Mundo Mágico de Harry Potter!</h1>
+                            <p>Navegue pelos corredores encantados e descubra os segredos de Hogwarts!</p>
+                        </div>
+                    </section>
+                    <section id="links">
+                        <div class="container clearfix">
+                            <div class="col-4">
+                                <a href="Assets/pág/livros.html"><img src="Assets/Img/Livros.jpg" alt="Livros">
+                                    <h2>Livros</h2></a>
+                            </div>
+                            <div class="col-4">
+                                <a href="Assets/pág/filmes.html"><img src="Assets/Img/Filmes.webp" alt="filmes">
+                                    <h2>Filmes</h2></a>
+                            </div>
+                            <div class="col-4">
+                                <a href="Assets/pág/história.html"><img src="Assets/Img/História.jpg" alt="História">
+                                    <h2>História</h2></a>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="parte2">
+                        <div class="col-12">
+                            <h1>Venha conhecer esse mundo fantástico!</h1>
+                        </div>
+                        <div class="cont clearfix">
+                             <div class="swiper">
+                                 <div class="swiper-wrapper">
+                                 <div class="swiper-slide"><img src="Assets/Img/Hogwarts Legacy.webp" alt="Hogwarts"></div>
+                                 <div class="swiper-slide"><img src="Assets/Img/Hogsmeade.webp" alt="Hogsmeade"></div>
+                                 <div class="swiper-slide"><img src="Assets/Img/Beco Diagonal.webp" alt="Beco Diagonal"></div>
+                            </div>
+                                 <div class="swiper-pagination"></div>
+                                 <div class="swiper-button-prev"></div>
+                                 <div class="swiper-button-next"></div>
+                             </div> 
+                        </div>
+                            <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+                        <script>
+                             const swiper = new Swiper('.swiper', { autoplay: {delay: 3000, disableOnInteraction: false,},
+                            loop: true, pagination: {el: '.swiper-pagination',},
+                            navigation: {nextEl: '.swiper-button-next',prevEl: '.swiper-button-prev',
+                            },});
+                        </script>
+                    </section>
+                </div>
+            </div>
+        </div> 
+        <div id="segundo" class="neutro">
+            <div class="brasao">
+            </div>
+            <section>
+                <h1>Escolha a sua casa de Hogwarts!</h1>
+            </section>
+            <div id="casas">
+                <div class="clearfix">
+                    <div class="col-3 Sons">
+                        <img src="Assets/Img/Sonserina.webp" alt="Sonserina">
+                        <span>Fundada por Salazar Sonserina, os alunos selecionados para esta casa possuem algumas 
+                            características como astúcia, desenvoltura, liderança e ambição. 
+                            O fundador da casa sempre valorizou e prezou por estudantes de sangue-puro (família inteira bruxa).</span>
+                    </div>
+                    <div class="col-3 Grif">
+                        <img src="Assets/Img/Grifinoria.webp" alt="Grifinoria">
+                        <span>Fundada por Godrico Grifinória, são conhecidos pela coragem, pela honra, pela ousadia e pela determinação. Ao mesmo tempo, são famosos por levarem 
+                            essas convicções ao extremo, fazendo que atos incrivelmente corajosos sejam vistos como ações imprudentes. </span>
+                    </div>
+                    <div class="col-3 Corv">
+                        <img src="Assets/Img/Corvinal.webp" alt="Corvinal">
+                        <span>Fundada por Rowena Corvinal, os alunos dessa casa possuem características como inteligência, intelecto, valorizam o aprendizado e sabedoria. 
+                            Corvinos tendem a ser estudantes proeminentes e bastante talentosos em meios acadêmicos.</span>
+                    </div>
+                    <div class="col-3 Luf">
+                        <img src="Assets/Img/Lufa Lufa.webp" alt="Lufa-lufa">
+                        <span>Fundada por Helga Hufflepuff, os alunos de Lufa-Lufa valorizam profundamente a lealdade e são ferozmente dedicados
+                             às suas relações pessoais. Por vezes, eles mesmos se prejudicam ao fazerem de tudo para não 
+                             magoar os sentimentos dos outros.</span>
+                    </div>
+                </div>
+                <div>
+                    <p>Obs: Segure pressionado para ver sobre sua casa</p>
+                </div>
+            </div>
+        </div> 
+        <div id="terceiro" class="planodefundo">
+            <div class="container clearfix">
+                <h2>"Todos temos luz e trevas dentro de nós, o que importa é o lado do qual decidimos agir!"</h2><br>
+                <div class="imagem">
+                    <img src="Assets/Img/Harry Potter vs Valdemort.jpg" alt="Harry vs Valdemort">
+                </div>
+            </div>
+        </div>
+        <div id="final">
+            <div class="background">
+                <div class="container clearfix col-12">
+                    <h1>"Aqui jaz um elfo livre"</h1>
+                    <img class="Dobby" src="Assets/Img/Dobby.jpg" alt="Dobby">
+                </div>
+                <div>
+                    <span>dobby</span>
+                </div>
+            </div>    
+        </div>
+        <footer>
+            <div id="fim">
+                <span>Densenvolvido por Willian</span>
+            </div>
+            <div id="ícones">
+                <div class="container clearfix">
+                    <div>
+                        <a href="https://www.instagram.com/willian._.moreira/"><img src="Assets/Img/Insta.png" alt="Instagram"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

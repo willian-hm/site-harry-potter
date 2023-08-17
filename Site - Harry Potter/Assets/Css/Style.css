@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+@font-face {
+    font-family: HP;
+    src: url(../Css/Fonts/HARRYP__.TTF);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: Fredoka One;
+    
+}
+
+nav {
+    background: #042a3b;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-image: linear-gradient(#222668, #0b1f28);
+}
+
+nav span {
+    color: white;
+}
+
+nav ul li img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover; 
+}
+
+nav ul li .img1 {
+    width: 100px;
+    object-fit: contain;
+}
+
+nav ul li #titulo {
+    width: 300px;
+    margin-right: 120px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+nav ul#menu li {
+    float: left;
+    border-radius: 8px;
+    margin-right: 120px;
+    color: white;
+}
+
+nav li:not(:first-child) {
+    cursor: pointer;
+}
+
+nav ul.right li {
+    float: right;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav ul#menu li.active {
+    background-color: #25566d;
+    position: relative;
+}
+
+nav ul#menu li:hover {
+    background-color: #25566d;
+}
+
+nav ul#menu li:first-child:hover {
+    background-color: transparent;
+}
+
+#frase {
+    float: right;
+    margin-top: 35px;
+    margin-right: 60px;
+    font-size: 18px;
+    color: white;
+}
+
+[class*="col-"] {
+    float: left;
+    padding-right: 10px;
+}
+    
+
+.col-1 { width: 8.33%; }
+.col-2 { width: 16.66%; }
+.col-3 { width: 24.99%; }
+.col-4 { width: 33.32%; }
+.col-5 { width: 41.65%; }
+.col-6 { width: 49.98%; }
+.col-7 { width: 58.31%; }
+.col-8 { width: 66.64%; }
+.col-9 { width: 74.97%; }
+.col-10 { width: 83.3%; }
+.col-11 { width: 91.63%; }
+.col-12 { width: 99.96%; }
+
+#main p {
+    margin-bottom: 30px;
+}
+
+.banner::before {
+    content: "";
+    background-image: url('../Img/Hogwarts.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 1350px;
+    z-index: -1;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin-top: 120px;
+}
+
+.container:not(:first-child) {
+    width: 1040px;
+    max-width: 100%;
+    margin: auto;
+}
+
+#bem_vindo {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+}
+
+#links {
+    text-align: center;
+    padding: 0 40px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+#links h2 {
+    color: white;
+    text-decoration: none;
+}
+
+#links img { 
+    width: 80%;
+    height: 285px;
+    border-radius: 0 40px;
+}
+
+#links img:hover  {
+    transition: all 0.6s cubic-bezier(0.65, -0.25, 0.25, 1.95);
+    padding: 0.8em 1.2em;
+    background: #0b1e26;
+}
+
+#parte2 {
+   text-align: center;
+   padding: 0 0px;
+   color: white;
+   margin-top: 80px;
+   margin-bottom: 0px;
+}
+
+#parte2 h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.cont {
+    width: 100%;
+    margin-bottom: 90px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper {
+    width: 80%;
+    height: fit-content;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 40em;
+}
+
+#segundo section h1 {
+    text-align: center;
+    color: white;
+    font-size: 100px;
+    padding: 40px 0;
+    font-family: HP;
+}
+
+.neutro {
+    background-color: black;
+    background-image: 
+    linear-gradient(black);
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.Sons {
+    border-radius: 40px;
+}
+
+.Sons:hover   {
+    background-color: green;  
+}
+
+.Sons:focus, .Sons:active {
+    background-color: green;
+    width: 100%;
+    position: absolute;
+}
+
+.Sons:focus, .Sons:active img {
+    float: left;
+}
+
+.Grif {
+    border-radius: 40px;
+}
+
+.Grif:hover {
+    background-color: red;
+}  
+
+.Grif:focus, .Grif:active {
+    background-color: red;
+    width: 100%;
+    position: absolute;
+}
+
+.Grif:focus, .Grif:active img {
+    float: left;
+} 
+
+.Corv {
+    border-radius: 40px;
+}
+
+.Corv:hover {
+    background-color: blue;
+}  
+
+.Corv:focus, .Corv:active {
+    background-color: blue;
+    width: 100%;
+    position: absolute;
+}
+
+.Corv:focus, .Corv:active img {
+    float: left;
+}
+
+.Luf {
+    border-radius: 40px;
+}
+
+.Luf:hover {
+    background-color: yellow;
+}   
+
+.Luf:focus, .Luf:active {
+    background-color: yellow;
+    width: 100%;
+    position: absolute;
+}
+
+.Luf:focus, .Luf:active img {
+    float: left;
+}
+
+.Corv, .Sons, .Luf, .Grif {
+    z-index: +1;
+}
+
+#casas {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+#casas span {
+    position: absolute;
+    top: 40px;
+    left: 300px;
+    margin-left: 0;
+    margin-right: 100px;
+    padding-left: 0;
+    z-index: -3;
+    font-size: 50px;
+    font-family: HP;
+}
+
+#casas p {
+    color: white; 
+    border-style: dashed;
+    font-size: 30px; 
+    margin-top: 90px;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+#casas img{
+    height: 250px;
+    margin: 0 40px;
+}
+
+#terceiro h2{
+    font-family: HP;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    padding-top: 100px;
+}
+
+.imagem {
+    text-align: center;
+}
+
+.imagem img {
+    width: 1100px;
+    padding-top: 140px;
+    border-radius: 50px;    
+}
+
+.planodefundo{
+    content:"";
+    background-image: url(../Img/Tela\ de\ Fundo1.jpg);
+    background-size: cover;
+    z-index: -1;
+    width: 100%;
+    height: 1200px;
+}
+
+#final {
+    font-family: HP;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+
+#final span {
+    font-size: 80px;
+}
+
+.Dobby {
+    width: 800px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.background {
+    background-color: black;
+    height: 1000px;
+}
+
+footer {
+    background-color: #042a3b;
+    background-image: linear-gradient(black, #042a3b);
+}
+
+footer div#fim {
+    text-align: center;
+}
+
+footer span {
+    font-size: 50px;
+    color: white;
+    font-family: HP;
+}
+
+
+footer div#ícones img {
+    width: 35px;
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+#ícones img:hover {
+    cursor: pointer;
+    transition: all 0.6s cubic-bezier(0.65, -0.25, 0.25, 1.95);
+    padding: 0.8px 2.5px;
+    z-index: +2;
+}
+
+.book-review {
+    display: flex;
+    padding: 20px;
+    margin: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.book-review img {
+max-width: 200px;
+margin-right: 20px;
+}
+
+.review-text {
+flex: 1;
+color: white;
+}
+
+.review-text h2 {
+font-size: 24px;
+margin-top: 0;
+}
+
+.review-text p {
+margin: 10px 0;
+}
+
+.preenchimento {
+    content: "";
+    background-color: black;
+    height: 1000px;
+    z-index: -2;
+    width: 100%;
+    position: absolute;
+    top: 90em;
+}
+
+.black {
+    content: "";
+    background-color: black;
+    height: 1100px;
+    top: 0;
+    z-index: -1;
+}
+
+#filmes header {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+#filmes main {
+    color: white;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+#filmes .movie-review {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+#filmes .movie-review h2 {
+    margin-top: 0;
+}
+
+#filmes .review {
+    font-style: italic;
+}
+
+#filmes .preencher {
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    z-index: -2;
+    top: 90rem;
+}
+
+#historia h1 {
+    font-family: HP;
+    font-size: 80px;
+    color: yellow;
+    border: solid white;
+    text-align: center;
+    margin: 45px;
+}
+
+#historia .banner p {
+    color: white;
+    margin-right: 200px;
+    margin-left: 200px;
+    text-align: justify;
+    font-size: 25px;
+}
+
+#historia section {
+    margin-bottom: 400px;
+}
+
+
+
+
